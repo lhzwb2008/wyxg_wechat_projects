@@ -1,0 +1,40 @@
+<!--index.wxml-->
+  <!-- <view>
+    <mp-icon type="field" icon="music" color="#04BE02" size="100"></mp-icon>
+  </view> -->
+  <view>
+    <form bindsubmit="bindFormSubmit" class="form">
+      <view class="input-view">
+        <input class="title" type="text" name="title" maxlength="10" placeholder-class="placeholder" placeholder="歌曲名" value="{{title}}"/>
+        <input class="author" type="nickname" name="author" maxlength="8" placeholder-class="placeholder" placeholder="作者"  value="{{author}}"/>
+      <textarea placeholder="输入中文歌词，用逗号断句" placeholder-class="placeholder" class="textarea" name="textarea" value="{{geci}}"/>
+      <picker name="source" bindchange="bindSourceChange" value="{{source}}" range="{{source_a}}">
+        <view class="picker">
+          AI歌手：{{source_a[source]}}
+        </view>
+      </picker>
+      <picker name="genre" bindchange="bindGenreChange" value="{{genre}}" range="{{genre_a}}">
+        <view class="picker">
+          曲风：{{genre_a[genre]}}
+        </view>
+      </picker>
+      <picker name="emotion" bindchange="bindEmotionChange" value="{{emotion}}" range="{{emotion_a}}">
+        <view class="picker">
+          心情：{{emotion_a[emotion]}}
+        </view>
+      </picker>
+      <picker name="velocity" bindchange="bindVelocityChange" value="{{velocity}}" range="{{velocity_a}}">
+        <view class="picker">
+          曲速：{{velocity_a[velocity]}}
+        </view>
+      </picker>   
+      <button bindtap="try" style="width: 450rpx;margin:10rpx;margin-top:50rpx;color:#FFDC72" type="default">随便试试</button>
+      <button class="submit" style="width: 450rpx;margin:10rpx;background-color:#FFDC72" type="primary" form-type="submit">AI写歌</button>
+      </view>
+    </form>
+  </view>
+  <view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view>

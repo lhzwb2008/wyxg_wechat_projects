@@ -1,0 +1,37 @@
+/**index.wxss**/
+.input-view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  width: 300rpx;
+  padding: 30rpx;
+  text-align:center;
+  font-size: 40rpx;
+  color:#4D4d4d;
+  border-bottom: 3rpx solid #FFDC72;
+}
+.author{
+  width: 150rpx;
+  padding: 20rpx;
+  text-align:center;
+  font-size: 40rpx;
+  color:#4D4d4d;
+  border-bottom: 3rpx solid #FFDC72;
+}
+.textarea{
+  margin-top: 70rpx;
+  margin-bottom: 30rpx;
+  padding: 50rpx;
+  width:500rpx;
+  font-size: 40rpx;
+  color:#4D4d4d;
+  text-align:center;
+  border:3rpx solid #FFDC72;
+}
+.placeholder{
+  font-size: 40rpx;
+  color:#4D4d4d;
+  text-align:center;
+}

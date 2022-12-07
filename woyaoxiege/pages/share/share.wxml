@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="geci" scroll-y="true">
+    <text style="font-size:60rpx;font-weight: bold;">{{title}}</text>
+    <text style="font-size:35rpx;font-style:italic;">{{author}}</text>
+    <text style="font-size:45rpx;margin-top:60rpx" >{{text}}</text>
+  </view>
+  <view class="controls">
+    <button id="playbtn" style="width:450rpx;margin:10rpx;background-color:#FFDC72;" type="primary" bindtap="audioPlay">{{playbtn}}</button>
+    <button style="width: 450rpx;margin:10rpx;background-color:#FFDC72" type="primary" bindtap="backToIndex">我也要写歌</button>
+  </view>
+</view>

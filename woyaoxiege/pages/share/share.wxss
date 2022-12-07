@@ -1,0 +1,14 @@
+.controls{
+  display: flex;
+  flex-direction: column;
+}
+.geci{
+  display: flex;
+  flex-direction: column;
+  height: 800rpx;
+  font-size: 50rpx;
+  color:#4D4d4d;
+  text-align:center;
+  overflow-y:auto;
+  overflow-x:scroll
+}
